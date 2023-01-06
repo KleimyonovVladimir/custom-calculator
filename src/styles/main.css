@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+}
+
+.output {
+  height: 100px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  overflow-x: auto;
+  background-color: #48494a;
+  transition: all 0.2s ease;
+  margin-bottom: -1px;
+}
+.prevOperand {
+  font-size: 1.5rem;
+}
+.currentOperand {
+  font-size: 2rem;
+}
+.buttons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  min-width: 640px;
+}
+.secondary-operators {
+  display: flex;
+  flex-wrap: wrap;
+}
+.secondary-operators .operator {
+  background-color: #5a5b5c;
+}
+.secondary-operators .operator:hover {
+  opacity: 0.9;
+}
+.main-operators .operator {
+  background-color: #f1a23b;
+}
+.main-operators .operator:hover {
+  background-color: #bb7c29;
+}
+.operator {
+  display: block;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  flex-grow: 1;
+  transition: all 0.2s ease;
+}
+
+.numbers-panel {
+  display: grid;
+}
+.numbers {
+  display: flex;
+}
+.numbers div {
+  display: flex;
+  flex-grow: 1;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #b0b0b1;
+  transition: all 0.2s ease;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers div:hover {
+  background-color: #999999;
+}
