@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <title>
+    <%=htmlWebpackPlugin.options.title%>
+  </title>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="output" id="output">
+      <div class="prevOperand"></div>
+      <div class="currentOperand">0</div>
+    </div>
+    <div class="buttons">
+      <div class="secondary-operators">
+        <div id="memory-recall" class="operator">MR</div>
+        <div id="memory-clear" class="operator">MC</div>
+        <div id="memory-plus" class="operator">M+</div>
+        <div id="memory-minus" class="operator">M-</div>
+        <div id="memory-save" class="operator">MS</div>
+        <div data-degree="2" class="operator degree">x<sup>2</sup></div>
+        <div data-degree="3" class="operator degree">x<sup>3</sup></div>
+        <div id="custom-degree" class="operator">x<sup>y</sup></div>
+        <div id="ten-to-degree" class="operator">10<sup>x</sup></div>
+        <div data-root="2" class="operator root"><img id="square-root" alt="Root"></div>
+        <div data-root="3" class="operator root"><img id="cube-root" alt="Root"></div>
+        <div id="custom-root" class="operator"><img id="y-root" alt="Root"></div>
+        <div id="factorial" class="operator">x!</div>
+        <div id="one-divide-number" class="operator">1/x</div>
+        <div id="sign-change" class="operator">+/-</div>
+        <div id="percent" class="operator">%</div>
+      </div>
+      <div class="numbers-panel">
+        <div class="numbers">
+          <div class="number">7</div>
+          <div class="number">8</div>
+          <div class="number">9</div>
+        </div>
+        <div class="numbers">
+          <div class="number">4</div>
+          <div class="number">5</div>
+          <div class="number">6</div>
+        </div>
+        <div class="numbers">
+          <div class="number">1</div>
+          <div class="number">2</div>
+          <div class="number">3</div>
+        </div>
+        <div class="numbers">
+          <div class="number">0</div>
+          <div class="number">.</div>
+          <div id="clear">AC</div>
+        </div>
+      </div>
+      <div class="main-operators">
+        <div class="operator main-operator">+</div>
+        <div class="operator main-operator">-</div>
+        <div data-operation="*" class="operator main-operator">&times;</div>
+        <div data-operation="÷" class="operator main-operator">&divide;</div>
+        <div class="operator" id="equel">=</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
